@@ -22,4 +22,5 @@ def predict(wine: Wine):
     batches = wine.batches
     np_batches = np.array(batches)
     pred = clf.predict(np_batches).tolist()
+    # comment to continue exercise
     return {"Prediction": pred}
